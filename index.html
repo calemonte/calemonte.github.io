@@ -1,18 +1,94 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+	<head>
+		<!-- Required meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+		<!-- Stylesheets: Bootstrap, Google Fonts, and my styles -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Sriracha" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/my-style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/my-style.css">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico"/>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+		<title>Kenny Whitebloom: Home</title>
+	</head>
+
+	<body>
+		<!-- Top navigation -->
+		<nav class="navbar navbar-expand-md navbar-light bg-white my-nav-bg">
+
+			<div class="container">
+
+				<!-- Left-aligned logo -->
+				<a class="navbar-brand my-nav-brand" href="index.html">Kenny Whitebloom</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="portfolio.html">Portfolio</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</nav>
+
+		<!-- Main content area -->
+		<main class="container">
+			<div class="row mt-5 mb-3">
+				<div class="col-lg-12">
+					<section class="main-content border rounded shadow-sm bg-white pt-3 pr-4 pl-4 pb-4 mb-5" id="home-body">
+						
+						<h1 class="mb-4 pb-3">About Me</h1>
+						
+						<div class="row">
+							<div class="col-lg-6">
+								<img src="assets/images/kenny1.jpg" alt="Black and white photograph of Kenny wearing a suit and smiling" class="img rounded shadow float-left mr-3 mb-3" id="profile-pic">
+							</div>
+
+							<div class="col-lg-6">
+								
+								<p>Hi! I'm Kenny. I'm a librarian and full stack web developer (in training) living in Philadelphia. I currently work at the <a href="https://www.library.upenn.edu/" target="_blank">University of Pennsylvania Libraries</a> as the Digital Scholarly Publishing Librarian. Prior to Penn, I worked as the Manager of Special Projects at the <a href="https://dp.la/" target="_blank">Digital Public Library of America</a>, a non-profit digital library that connects people to the riches held within America’s libraries, archives, museums, and other cultural heritage institutions. Before that I worked at the <a href="https://cyber.harvard.edu/" target="_blank">Berkman Klein Center for Internet & Society</a> at Harvard University as a Project Coordinator. I'm an alum of Vassar College, where I received a B.A. in History and Italian, and Simmons University, where I received a Master of Library and Information Science</a>.</p>
+
+								<p class="text-center">
+
+									<a href="https://www.linkedin.com/in/kenny-whitebloom" target="_blank" class="ml-3 mr-3 text-dark"><i class="fab fa-linkedin fa-2x"></i></a>
+
+									<a href="https://github.com/calemonte" target="_blank" class="ml-3 mr-3 text-dark"><i class="fab fa-github fa-2x"></i></a>
+
+								</p>
+								
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer w-100 bg-light border-top">
+			<div class="container">
+				<p class="text-center font-weight-light mb-0"><small>&#169; 2019 Kenny Whitebloom</small></p>
+			</div>
+		</footer>	
+
+		<!-- JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
