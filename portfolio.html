@@ -1,311 +1,506 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-	<head>
-		<!-- Required meta tags -->
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Stylesheets: Bootstrap, Google Fonts, and my styles -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Sriracha"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/my-style.css" />
 
-		<!-- Stylesheets: Bootstrap, Google Fonts, and my styles -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Sriracha" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/my-style.css">
-        
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico"/>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="assets/images/favicon.ico"
+    />
 
-		<title>Kenny Whitebloom: Portfolio</title>
-	</head>
+    <title>Kenny Whitebloom: Portfolio</title>
+  </head>
 
-	<body>
-		<!-- Top navigation -->
-		<nav class="navbar navbar-expand-md navbar-light bg-white my-nav-bg">
+  <body>
+    <!-- Top navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white my-nav-bg">
+      <div class="container">
+        <!-- Left-aligned logo -->
+        <a class="navbar-brand my-nav-brand" href="index.html"
+          >Kenny Whitebloom</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-			<div class="container">
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="portfolio.html"
+                >Portfolio <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-				<!-- Left-aligned logo -->
-				<a class="navbar-brand my-nav-brand" href="index.html">Kenny Whitebloom</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+    <!-- Main content area -->
+    <main class="container">
+      <div class="row mt-5 mb-3">
+        <div class="col-lg-12">
+          <section
+            class="main-content border rounded shadow-sm bg-white pt-3 pr-4 pl-4 pb-4 mb-5"
+          >
+            <!-- Portfolio body -->
+            <h1 class="mb-4 pb-3">Portfolio</h1>
 
-				<!-- Navbar links -->
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item ">
-							<a class="nav-link" href="index.html">About</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-						</li>
-					</ul>
-				</div>
+            <!-- Beadli-->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/beadli.png"
+                  alt="Screenshot of the Beadli application masthead."
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>Beadli</h3>
+                <p>
+                  Beadli is a MERN-stack app that allows users to create, share,
+                  and browse pixel designs intended for fuse bead crafting.
+                  Developed with three others, my role in the project was
+                  front-end development using React (notably the interactive
+                  "paint" functionality and client-side authentication routing),
+                  UI/UX design, and floating back-end development. This app uses
+                  React to handle the view and functionality, Express and Node
+                  for server-side API routing, MongoDB for data storage, and
+                  Passport.js for authentication. This application follows the
+                  MVC design pattern. Built with React, MongoDB, Express, Node,
+                  Mongoose, Passport.js, Bitmap.js, JavaScript, Bootstrap, React
+                  Bootstrap, CSS3, and HTML5.
+                </p>
 
-			</div>
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="http://bead.li"
+                  ><i class="fas fa-external-link-alt pr-2"></i>View Project</a
+                >
 
-		</nav>
-
-		<!-- Main content area -->
-		<main class="container">
-			<div class="row mt-5 mb-3">
-				<div class="col-lg-12">
-					<section class="main-content border rounded shadow-sm bg-white pt-3 pr-4 pl-4 pb-4 mb-5">
-                        
-                        <!-- Portfolio body -->
-                        <h1 class="mb-4 pb-3">Portfolio</h1>
-
-                            <!-- Beadli-->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/beadli.png" alt="Screenshot of the Beadli application masthead.">
-                                </div>
-                                <div class="col-lg-5">
-                                    <h3>Beadli</h3>
-                                    <p>Beadli is a MERN-stack app that allows users to create, share, and browse pixel designs intended for fuse bead crafting. Developed with three others, my role in the project was front-end development using React (notably the interactive "paint" functionality and client-side authentication routing), UI/UX design, and floating back-end development. This app uses React to handle the view and functionality, Express and Node for server-side API routing, MongoDB for data storage, and Passport.js for authentication. This application follows the MVC design pattern. Built with React, MongoDB, Express, Node, Mongoose, Passport.js, Bitmap.js, JavaScript, Bootstrap, React Bootstrap, CSS3, and HTML5.</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="http://bead.li"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/Beadli"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Philly Me In -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/phillymein.png" alt="Screenshot of the Philly Me In web application.">
-                                </div>
-                                <div class="col-lg-5">
-                                    <h3>Philly Me In</h3>
-                                    <p>A full stack web application that allows users to leverage their knowledge of the City of Brotherly Love -- or the knowledge of others -- to create and explore custom walking tours of Philadelphia. My role in this four-person development project was front-end development, API and HTML routing, user authentication, which I developed in coordination with our lead back-end developer, and project management. This application follows the MVC design pattern. Built with JavaScript, Node.js, Express, Sequelize, Passport.js, MySQL, HTML/CSS, JQuery, and Bootstrap.</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://philly-me-in.herokuapp.com/"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/Philly-Me-In"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Dinner and a Movie-->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                    
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/dinner-and-a-movie.png" alt="Screenshot of the Dinner and a Movie web application.">
-                               
-                                </div>
-
-                                <div class="col-lg-5">
-                                    <h3>Dinner and a Movie</h3>
-                                    <p>Deciding on the perfect dinner recipe and movie combination is tough. Enter a few key ingredients and receive a recipe tailored just for you. The cherry on top? A recommended movie based on movies you already know and love. My role in this four-person development project was front-end design and development, API integration, and user authentication and backend engineering using Firebase. Built with JavaScript, JQuery, Bootstrap, and Firebase.</p>
-                                    
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://calemonte.github.io/project1/"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/project1"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Boogle Books -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/booglebooks.png" alt="Screenshot of Boogle Books React web application logo.">
-                                </div>
-                                    <div class="col-lg-5">
-                                    <h3>Boogle Books</h3>
-                                    <p>Boogle Books is a full stack React-based application that allows users to search the Google Books API and save their favorites for later. This project was built using MVC architecture with React, JavaScript/Node, Material UI, MongoDB + Mongoose, and Express.</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://boogle-books.herokuapp.com/"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/boogle-books"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Kitty Klicker -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/kittyklicker.png" alt="Screenshot of Kitty Klicker React web application logo.">
-                                </div>
-                                    <div class="col-lg-5">
-                                    <h3>Kitty Klicker</h3>
-                                    <p>Kitty Klicker is a simple memory game built with React (and cute kittens). To play, click on any image to get started, but make sure you remember which one it was -- clicking on the same image twice will knock your score down to 0! This application was my first foray into React.</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://calemonte.github.io/clickygame"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/clickygame"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Soccer News Scraper -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/soccernews.png" alt="Screenshot of Soccer News Scraper web application.">
-                                </div>
-                                    <div class="col-lg-5">
-                                    <h3>Soccer News Scraper</h3>
-                                    <p>A full stack application that allows users to scrape headlines from The Guardian's soccer news homepage, save favorite articles, and then add simple comments to those saved articles. This application was created during the process of learning MongoDB and Mongoose.js. Built with JavaScript, Node.js, Express, Handlebars, MongoDB, and Mongoose.js, among other things.</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://soccer-news-scraper.herokuapp.com/"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/soccer-news-scraper"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Friend Finder -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/friendfinder.png" alt="Screenshot of the Friend Finder web application.">
-                                </div>
-                                <div class="col-lg-5">
-                                    <h3>Friend Finder</h3>
-                                    <p>A full stack web application in which users answer a series of questions on a scale of 0 to 10, and based on those selections they get connected with somone who answered similarly. Built with JavaScript, Node.js, Express, HTML/CSS, JQuery, and Materialize.</p>
-
-                                   <a class="btn btn-outline-dark" target="_blank" href="https://friendfinder-2019.herokuapp.com/"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/friendfinder"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Bamazon -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/bamazon.png" alt="Screenshot of Bamazon command line application.">
-                                </div>
-                                    <div class="col-lg-5">
-                                    <h3>Bamazon</h3>
-                                    <p>Bamazon is a trio of command line Node.js applications connected to a local MySQL database that allows customers to purchase items (bamazonCustomer.js), managers to view products for sale and replenish inventories (bamazonManager.js), and supervisors to view gross sales by department and add new departments (bamazonSupervisor.js). Built with JavaScript, Node.js, MySQL / SQL, Inquirer, and a number of other nifty npm packages.</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/bam"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Philadelphia Trivia -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/trivia.png" alt="Screenshot of Philadelphia Trivia web application.">
-                                </div>
-                                    <div class="col-lg-5">
-                                    <h3>Philadelphia Trivia</h3>
-                                    <p>Think you know Philly? Test your knowledge of the City of Brotherly Love using this simple yet challenging JQuery web application. Make sure that you answer each question under the time limit to get a perfect 10/10. Built with JavaScript, JQuery, and custom HTML/CSS.</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://calemonte.github.io/trivia-game/"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/trivia-game"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- WordGuess CLI -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/wordguess2.png" alt="Screenshot of WordGuess command line application.">
-                                </div>
-                                    <div class="col-lg-5">
-                                    <h3>WordGuess CLI</h3>
-                                    <p>A Node.js word guess game played in the command line. WordGuess CLI makes use of the Inquirer npm package to provide an easy-to-use CLI interface, including the ability to view game stats. Built with JavaScript, Node.js, Inquirer, and Chalk (for the nice text colors).</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/wordguess-cli"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Gif-o-Matic -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/gifomatic.png" alt="Screenshot of the Movie Gif-o-Matic web application.">
-                                </div>
-                                <div class="col-lg-5">
-                                    <h3>Movie Gif-o-Matic</h3>
-                                    <p>A dynamic web app built in JavaScript, JQuery, and Bootstrap that populates the page with animated gifs from the GIPHY API and movie information pulled from the Open Movie Database API. Built with JavaScript, JQuery, and Bootstrap.</p>
-
-                                   <a class="btn btn-outline-dark" target="_blank" href="https://calemonte.github.io/giftastic/"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/giftastic"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- LIRI -->
-                            <div class="row pb-3">
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/liri.png" alt="Screenshot of LIRI command line application.">
-                                </div>
-                                    <div class="col-lg-5">
-                                    <h3>LIRI</h3>
-                                    <p>LIRI (<em>Language</em> Interpretation and Recognition Interface) is a command line Node.js application that searches Spotify for songs, Bands in Town for concerts, and the Open Movie Database for movies using an easy-to-use Inquirer interface. Built with JavaScript, Node.js, and a number of npm packages (Axios, Dotenv, Inquirer, Moment, and Node Spotify API).</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/liri-node-app"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <hr class="pb-3">
-
-                            <!-- Fruit Fight -->
-                            <div class="row pb-3">
-
-                                <div class="col-lg-7">
-                                    <img class="img-fluid rounded shadow mb-3 mb-md-0" src="assets/images/fruit-fight.png" alt="Screenshot of the Fruit Fighters web application">
-                                </div>
-                                <div class="col-lg-5">
-                                    <h3>Fruit Fight</h3>
-                                    <p>A simple, minimalist web game in which the user selects one of four fruits as their "fruit fighter" in an effort to defeat the remaining three fruits. Built with JavaScript, JQuery, and custom HTML/CSS.</p>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://calemonte.github.io/unit-4-game/"><i class="fas fa-external-link-alt pr-2"></i>View Project</a>
-
-                                    <a class="btn btn-outline-dark" target="_blank" href="https://github.com/calemonte/unit-4-game"><i class="fab fa-github pr-2"></i>View Code</a>
-                                </div>
-                                
-                            </div>
-                            <!-- /.row -->
-
-                        </div>
-                        <!-- /.container -->
-
-					</section>
-				</div>
-			</div>
-		</main>
-
-		<!-- Footer -->
-		<footer class="footer w-100 bg-light border-top">
-            <div class="container">
-                <p class="text-center font-weight-light mb-0"><small>&#169; 2018 Kenny Whitebloom</small></p>
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/Beadli"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
             </div>
-        </footer>		
+            <!-- /.row -->
 
-		<!-- JavaScript -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <hr class="pb-3" />
 
-	</body>
+            <!-- Philly Me In -->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/phillymein.png"
+                  alt="Screenshot of the Philly Me In web application."
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>Philly Me In</h3>
+                <p>
+                  A full stack web application that allows users to leverage
+                  their knowledge of the City of Brotherly Love -- or the
+                  knowledge of others -- to create and explore custom walking
+                  tours of Philadelphia. My role in this four-person development
+                  project was front-end development, API and HTML routing, user
+                  authentication, which I developed in coordination with our
+                  lead back-end developer, and project management. This
+                  application follows the MVC design pattern. Built with
+                  JavaScript, Node.js, Express, Sequelize, Passport.js, MySQL,
+                  HTML/CSS, JQuery, and Bootstrap.
+                </p>
 
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://philly-me-in.herokuapp.com/"
+                  ><i class="fas fa-external-link-alt pr-2"></i>View Project</a
+                >
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/Philly-Me-In"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr class="pb-3" />
+
+            <!-- Dinner and a Movie-->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/dinner-and-a-movie.png"
+                  alt="Screenshot of the Dinner and a Movie web application."
+                />
+              </div>
+
+              <div class="col-lg-5">
+                <h3>Dinner and a Movie</h3>
+                <p>
+                  Deciding on the perfect dinner recipe and movie combination is
+                  tough. Enter a few key ingredients and receive a recipe
+                  tailored just for you. The cherry on top? A recommended movie
+                  based on movies you already know and love. My role in this
+                  four-person development project was front-end design and
+                  development, API integration, and user authentication and
+                  backend engineering using Firebase. Built with JavaScript,
+                  JQuery, Bootstrap, and Firebase.
+                </p>
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://calemonte.github.io/project1/"
+                  ><i class="fas fa-external-link-alt pr-2"></i>View Project</a
+                >
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/project1"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr class="pb-3" />
+
+            <!-- Boogle Books -->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/booglebooks.png"
+                  alt="Screenshot of Boogle Books React web application logo."
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>Boogle Books</h3>
+                <p>
+                  Boogle Books is a full stack React-based application that
+                  allows users to search the Google Books API and save their
+                  favorites for later. This project was built using MVC
+                  architecture with React, JavaScript/Node, Material UI, MongoDB
+                  + Mongoose, and Express.
+                </p>
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://boogle-books.herokuapp.com/"
+                  ><i class="fas fa-external-link-alt pr-2"></i>View Project</a
+                >
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/boogle-books"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr class="pb-3" />
+
+            <!-- Soccer News Scraper -->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/soccernews.png"
+                  alt="Screenshot of Soccer News Scraper web application."
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>Soccer News Scraper</h3>
+                <p>
+                  A full stack application that allows users to scrape headlines
+                  from The Guardian's soccer news homepage, save favorite
+                  articles, and then add simple comments to those saved
+                  articles. This application was created during the process of
+                  learning MongoDB and Mongoose.js. Built with JavaScript,
+                  Node.js, Express, Handlebars, MongoDB, and Mongoose.js, among
+                  other things.
+                </p>
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://soccer-news-scraper.herokuapp.com/"
+                  ><i class="fas fa-external-link-alt pr-2"></i>View Project</a
+                >
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/soccer-news-scraper"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr class="pb-3" />
+
+            <!-- Kitty Klicker -->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/kittyklicker.png"
+                  alt="Screenshot of Kitty Klicker React web application logo."
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>Kitty Klicker</h3>
+                <p>
+                  Kitty Klicker is a simple memory game built with React (and
+                  cute kittens). To play, click on any image to get started, but
+                  make sure you remember which one it was -- clicking on the
+                  same image twice will knock your score down to 0! This
+                  application was my first foray into React.
+                </p>
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://calemonte.github.io/clickygame"
+                  ><i class="fas fa-external-link-alt pr-2"></i>View Project</a
+                >
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/clickygame"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr class="pb-3" />
+
+            <!-- Friend Finder -->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/friendfinder.png"
+                  alt="Screenshot of the Friend Finder web application."
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>Friend Finder</h3>
+                <p>
+                  A full stack web application in which users answer a series of
+                  questions on a scale of 0 to 10, and based on those selections
+                  they get connected with somone who answered similarly. Built
+                  with JavaScript, Node.js, Express, HTML/CSS, JQuery, and
+                  Materialize.
+                </p>
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://friendfinder-2019.herokuapp.com/"
+                  ><i class="fas fa-external-link-alt pr-2"></i>View Project</a
+                >
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/friendfinder"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr class="pb-3" />
+
+            <!-- Philadelphia Trivia -->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/trivia.png"
+                  alt="Screenshot of Philadelphia Trivia web application."
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>Philadelphia Trivia</h3>
+                <p>
+                  Think you know Philly? Test your knowledge of the City of
+                  Brotherly Love using this simple yet challenging JQuery web
+                  application. Make sure that you answer each question under the
+                  time limit to get a perfect 10/10. Built with JavaScript,
+                  JQuery, and custom HTML/CSS.
+                </p>
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://calemonte.github.io/trivia-game/"
+                  ><i class="fas fa-external-link-alt pr-2"></i>View Project</a
+                >
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/trivia-game"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr class="pb-3" />
+
+            <!-- Bamazon -->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/bamazon.png"
+                  alt="Screenshot of Bamazon command line application."
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>Bamazon</h3>
+                <p>
+                  Bamazon is a trio of command line Node.js applications
+                  connected to a local MySQL database that allows customers to
+                  purchase items (bamazonCustomer.js), managers to view products
+                  for sale and replenish inventories (bamazonManager.js), and
+                  supervisors to view gross sales by department and add new
+                  departments (bamazonSupervisor.js). Built with JavaScript,
+                  Node.js, MySQL / SQL, Inquirer, and a number of other nifty
+                  npm packages.
+                </p>
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/bam"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr class="pb-3" />
+
+            <!-- WordGuess CLI -->
+            <div class="row pb-3">
+              <div class="col-lg-7">
+                <img
+                  class="img-fluid rounded shadow mb-3 mb-md-0"
+                  src="assets/images/wordguess2.png"
+                  alt="Screenshot of WordGuess command line application."
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>WordGuess CLI</h3>
+                <p>
+                  A Node.js word guess game played in the command line.
+                  WordGuess CLI makes use of the Inquirer npm package to provide
+                  an easy-to-use CLI interface, including the ability to view
+                  game stats. Built with JavaScript, Node.js, Inquirer, and
+                  Chalk (for the nice text colors).
+                </p>
+
+                <a
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  href="https://github.com/calemonte/wordguess-cli"
+                  ><i class="fab fa-github pr-2"></i>View Code</a
+                >
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- /.container -->
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer w-100 bg-light border-top">
+      <div class="container">
+        <p class="text-center font-weight-light mb-0">
+          <small>&#169; 2018 Kenny Whitebloom</small>
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
