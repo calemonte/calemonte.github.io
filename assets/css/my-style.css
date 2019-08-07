@@ -5,17 +5,27 @@ General styles
 */
 
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-    margin-bottom: 60px; /* Margin bottom by footer height */
-    font-family: 'Nanum Gothic', sans-serif;
-    color: black;
-    background: whitesmoke;
-    background-image: url("../images/subtle_zebra_3d.png");
-    background-repeat: repeat;
+  margin-bottom: 60px; /* Margin bottom by footer height */
+  font-family: "Nanum Gothic", sans-serif;
+  color: black;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* 
@@ -24,13 +34,13 @@ Navigation styles
 ==========================
 */
 
-.my-nav-bg {
-    border-bottom: 2px solid #ccc;
-}
+/* .my-nav-bg {
+  border-bottom: 2px solid #ccc;
+} */
 
 .my-nav-brand {
-    font-family: 'Sriracha', Georgia, serif;
-    font-size: 150%;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 150%;
 }
 
 /* 
@@ -40,22 +50,92 @@ Main content box styles
 */
 
 .main-content {
-    line-height: 2;
+  line-height: 1.7;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.main-content h1 {
-    border-bottom: 3px solid rgb(212, 212, 212);
-}
+/* .main-content h1 {
+  border-bottom: 3px solid rgb(212, 212, 212);
+} */
 
-#home-body a, a:hover {
-    color: #E45F56;
-    text-decoration: none;
+#home-body a,
+a:hover {
+  color: #7f7fd5;
+  text-decoration: none;
 }
 
 #profile-pic {
-    width: 100%;
+  width: 100%;
 }
 
+.btn:hover,
+.btn-outline-dark:hover {
+  background: #7f7fd5 !important;
+  background: -webkit-linear-gradient(
+    to left,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ) !important;
+  background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5) !important;
+  border-width: 3px !important;
+  border: white;
+}
+
+hr {
+  /* margin-top: 2.5em; */
+  margin-bottom: 2.5em;
+  border: 0;
+  border-top: 1px double #bdbdbd;
+  text-align: center;
+}
+
+hr:after {
+  /* content: "\2665"; */
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: #fff;
+  color: #91eae4;
+  font-size: 18px;
+}
+
+.heart:after {
+  content: "\2665";
+}
+
+.smile:after {
+  content: "\263B";
+}
+
+.crown:after {
+  content: "\265B";
+}
+
+.music:after {
+  content: "\266C";
+}
+
+.phone:after {
+  content: "\260E";
+}
+
+.sun:after {
+  content: "\2600";
+}
+
+.star:after {
+  content: "\2605";
+}
+
+.plane:after {
+  content: "\2708";
+}
+
+.check:after {
+  content: "\2714";
+}
 
 /* 
 ==========================
@@ -64,8 +144,8 @@ Footer styles
 */
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    height: 60px; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
+  position: absolute;
+  bottom: 0;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
 }
