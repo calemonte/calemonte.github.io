@@ -121,20 +121,20 @@ hr:after {
   content: "\260E";
 }
 
-.sun:after {
-  content: "\2600";
+.fisheye:after {
+  content: "\25C9";
 }
 
 .star:after {
   content: "\2605";
 }
 
-.plane:after {
-  content: "\2708";
+.burst:after {
+  content: "\273A";
 }
 
-.check:after {
-  content: "\2714";
+.arrow:after {
+  content: "\27A0";
 }
 
 /* 
