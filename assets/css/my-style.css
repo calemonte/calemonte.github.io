@@ -130,11 +130,11 @@ hr:after {
 }
 
 .burst:after {
-  content: "\273A";
+  content: "\2731";
 }
 
-.arrow:after {
-  content: "\27A0";
+.diamond:after {
+  content: "\25C6";
 }
 
 /* 
