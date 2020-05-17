@@ -13,19 +13,6 @@ body {
   margin-bottom: 60px; /* Margin bottom by footer height */
   font-family: "Nanum Gothic", sans-serif;
   color: black;
-  background: #7f7fd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* 
@@ -41,6 +28,7 @@ Navigation styles
 .my-nav-brand {
   font-family: "Nanum Gothic", sans-serif;
   font-size: 150%;
+  color: black;
 }
 
 /* 
@@ -50,25 +38,30 @@ Main content box styles
 */
 
 .main-content {
-  line-height: 1.7;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  line-height: 2;
 }
 
 /* .main-content h1 {
   border-bottom: 3px solid rgb(212, 212, 212);
 } */
 
-#home-body a,
-a:hover {
-  color: #7f7fd5;
+.body-link {
+  color: #6161d1;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.body-link:hover {
+  background-color: #6161d1;
+  color: white;
   text-decoration: none;
 }
 
-#profile-pic {
+.profile-pic {
   width: 100%;
 }
 
-.btn:hover,
+/* .btn:hover,
 .btn-outline-dark:hover {
   background: #7f7fd5 !important;
   background: -webkit-linear-gradient(
@@ -80,10 +73,9 @@ a:hover {
   background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5) !important;
   border-width: 3px !important;
   border: white;
-}
+} */
 
-hr {
-  /* margin-top: 2.5em; */
+/* hr {
   margin-bottom: 2.5em;
   border: 0;
   border-top: 1px double #bdbdbd;
@@ -91,7 +83,6 @@ hr {
 }
 
 hr:after {
-  /* content: "\2665"; */
   display: inline-block;
   position: relative;
   top: -15px;
@@ -135,7 +126,7 @@ hr:after {
 
 .diamond:after {
   content: "\25C6";
-}
+} */
 
 /* 
 ==========================
@@ -143,9 +134,9 @@ Footer styles
 ==========================
 */
 
-.footer {
+/* .footer {
   position: absolute;
   bottom: 0;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
-}
+  height: 60px;
+  line-height: 60px;
+} */
